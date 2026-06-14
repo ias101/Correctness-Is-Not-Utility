@@ -1,0 +1,20 @@
+# Core ML
+torch>=2.0.0
+torchvision
+torchaudio
+transformers>=4.40.0
+datasets>=2.14.0
+scikit-learn>=1.3.0
+numpy>=1.24.0
+
+# Quantization (for LLaMA on 16GB GPU)
+bitsandbytes>=0.41.0
+accelerate>=0.24.0
+
+# Evaluation & Plotting
+matplotlib>=3.7.0
+tqdm>=4.66.0
+
+# Optional: DPR retrieval
+# faiss-cpu>=1.7.4  # for DPR passage index
+# sentence-transformers>=2.2.0  # for reranking
