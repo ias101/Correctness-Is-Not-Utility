@@ -108,17 +108,6 @@ python experiments/routing_hotpotqa_v5.py \
 - **Quantization**: 4-bit (bitsandbytes) for 7B models
 - **Disk**: ~5GB for models, ~2GB for datasets
 
-## Citation
-
-```bibtex
-@article{shen2026correctness,
-  title={Correctness Is Not Utility: Why Threshold-Based Hidden-State Routing Fails in Adaptive RAG},
-  author={Shen, Jikun},
-  journal={arXiv preprint},
-  year={2026}
-}
-```
-
 ## License
 
 MIT
