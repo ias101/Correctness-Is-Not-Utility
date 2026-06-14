@@ -60,7 +60,7 @@ We probe frozen LLM hidden states across 4 RAG stages and find:
 │   ├── download_mistral.py         # Mistral-7B model downloader
 │   ├── download_model_script.py    # Qwen2.5-7B model downloader
 │   └── requirements.txt           # Python dependencies
-
+```
 
 ## Quick Start
 
