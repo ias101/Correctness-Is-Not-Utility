@@ -650,7 +650,7 @@ def main():
         help="Skip Platt scaling calibration"
     )
     parser.add_argument(
-        "--label_type", type=str, default="final",
+        "--label_type", type=str, default="stage",
         choices=["final", "stage"],
         help="Label to predict: 'final' = final (S3) correctness from any stage, "
              "'stage' = stage-specific correctness (cleaner probe design)"
