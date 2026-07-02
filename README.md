@@ -60,7 +60,7 @@ We probe frozen LLM hidden states across 4 RAG stages and find:
 │   ├── download_mistral.py         # Mistral-7B model downloader
 │   ├── download_model_script.py    # Qwen2.5-7B model downloader
 │   └── requirements.txt           # Python dependencies
-
+```
 
 ## Quick Start
 
@@ -102,34 +102,11 @@ python experiments/routing_hotpotqa_v5.py \
     --output_dir results/v5_experiment/
 ```
 
-## Key Results
-
-| Metric | Qwen2.5-7B | Mistral-7B |
-|--------|-----------|------------|
-| Correctness AUROC | 0.78–0.96 | 0.72–0.89 |
-| Conditional Benefit AUROC | 0.575 [0.543, 0.606] | 0.615 |
-| Conditional Degradation AUROC | 0.693 [0.647, 0.739] | 0.606 |
-| Routing CWA vs Best Static | Degenerate | Degenerate |
-| Oracle Routing Headroom | 77.0% CWA | — |
-
-See `results/v5_experiment/canonical_v5_full.json` for all numbers with bootstrap CIs.
-
 ## Hardware Requirements
 
 - **GPU**: 16GB VRAM minimum (tested on RTX 3080 Laptop)
 - **Quantization**: 4-bit (bitsandbytes) for 7B models
 - **Disk**: ~5GB for models, ~2GB for datasets
-
-## Citation
-
-```bibtex
-@article{shen2026correctness,
-  title={Correctness Is Not Utility: Why Threshold-Based Hidden-State Routing Fails in Adaptive RAG},
-  author={Shen, Jikun},
-  journal={arXiv preprint},
-  year={2026}
-}
-```
 
 ## License
 
